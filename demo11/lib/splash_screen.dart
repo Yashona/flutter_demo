@@ -16,7 +16,7 @@ class _SplashScreenDemoState extends State<SplashScreenDemo> with SingleTickerPr
   void initState() {
     // TODO: implement initState
     super.initState();
-    _controller = AnimationController( vsync: this, duration: Duration(microseconds: 10000));
+    _controller = AnimationController( vsync: this, duration: Duration(milliseconds: 5000));
     _animation = Tween(begin: 0.0, end: 1.0).animate(_controller);
 
     _animation.addStatusListener((status){
